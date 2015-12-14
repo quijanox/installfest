@@ -50,6 +50,48 @@ defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder
 - Advanced > When performing a search > Search the current folder
 - Add HD & User to favorites
 
+# Bash
+1. Check if you have a `.bashrc` file in your home directory. Open your terminal and type `ls ~/.bashrc`. If you receive a warning saying no such file or directory exists, type `touch ~/.bashrc`. This creates an empty file for us.
+
+1. Check if you have a `.bash_profile` in your home directory. Open your terminal and type `ls ~/.bash_profile`. If you receive a warning saying no such file or directory exists, type `touch ~/.bash_profile`.
+
+1. Execute the follow commands at the terminal.
+```
+echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
+```
+```
+echo 'test -f ~/.bashrc && source ~/.bashrc' >> ~/.bash_profile
+```
+
+1. Check `.bash_profile` to make sure it has the contents we expect. Type `cat ~/.bash_profile` in the terminal to look at the contents of the file. Near the bottom, you should have something that looks like this:
+```
+# ~/.bash_profile
+
+export PATH=/usr/local/bin:$PATH
+test -f ~/.bashrc && source ~/.bashrc
+```
+
+1. Update `/etc/paths` by running the following commands.
+
+```
+echo '/\/usr\/local\/bin/\nd\nwq' | sudo ed /etc/paths
+```
+```
+echo '1i\n/usr/local/bin\n.\nwq' | sudo ed /etc/paths
+```
+
+1. Inspect our changes by typing `cat /etc/pahts`. It should look like this:
+
+```
+# /etc/paths
+
+/usr/local/bin
+/usr/bin
+/bin
+/usr/sbin
+/sbin
+```
+
 # APPS
 ### Chrome
 
@@ -62,6 +104,10 @@ defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder
 ### Skipe
 
 ### Jumpcut
-- Users & Groups > Login Items > Jumpcut
+- System Preferences > Users & Groups > Login Items > Jumpcut
 - Preferences > General > Display in menu > 40
 - Preferences > Hotkeys > Main hotkey > CMD + ALT + c
+
+### Xcode
+1. Install Xcode from the AppStore.
+1. Open Xcode 
