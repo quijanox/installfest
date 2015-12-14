@@ -10,9 +10,9 @@ Instructions for installing work environment in OS X
 1. Make sure the El Capitan installer (or at least a copy of it), called Install OS X El Capitan.app, is in its default location in your main Applications folder (/Applications).
 
 1. Run in terminal:
-```
-sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/Untitled --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app --nointeraction
-```
+  ```
+  sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/Untitled --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app --nointeraction
+  ```
 
 ### Booting from the installer drive
 1. Restart the Mac holding down the alt(option) key.
