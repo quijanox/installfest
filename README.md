@@ -53,9 +53,9 @@ defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder
 # Bash
 1. Check if you have a `.bashrc` file in your home directory. Open your terminal and type `ls ~/.bashrc`. If you receive a warning saying no such file or directory exists, type `touch ~/.bashrc`. This creates an empty file for us.
 
-2. Check if you have a `.bash_profile` in your home directory. Open your terminal and type `ls ~/.bash_profile`. If you receive a warning saying no such file or directory exists, type `touch ~/.bash_profile`.
+1. Check if you have a `.bash_profile` in your home directory. Open your terminal and type `ls ~/.bash_profile`. If you receive a warning saying no such file or directory exists, type `touch ~/.bash_profile`.
 
-3. Execute the follow commands at the terminal.
+1. Execute the follow commands at the terminal.
 ```
 echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
 ```
@@ -63,34 +63,30 @@ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
 echo 'test -f ~/.bashrc && source ~/.bashrc' >> ~/.bash_profile
 ```
 
-4. Check `.bash_profile` to make sure it has the contents we expect. Type `cat ~/.bash_profile` in the terminal to look at the contents of the file. Near the bottom, you should have something that looks like this:
+1. Check `.bash_profile` to make sure it has the contents we expect. Type `cat ~/.bash_profile` in the terminal to look at the contents of the file. Near the bottom, you should have something that looks like this:
 ```
-# ~/.bash_profile
-
 export PATH=/usr/local/bin:$PATH
 test -f ~/.bashrc && source ~/.bashrc
 ```
 
-5. Update `/etc/paths` by running the following commands.
+1. Update `/etc/paths` by running the following commands.
 
-```
-echo '/\/usr\/local\/bin/\nd\nwq' | sudo ed /etc/paths
-```
-```
-echo '1i\n/usr/local/bin\n.\nwq' | sudo ed /etc/paths
-```
+  ```
+  echo '/\/usr\/local\/bin/\nd\nwq' | sudo ed /etc/paths
+  ```
+  ```
+  echo '1i\n/usr/local/bin\n.\nwq' | sudo ed /etc/paths
+  ```
 
-6. Inspect our changes by typing `cat /etc/paths`. It should look like this:
+1. Inspect our changes by typing `cat /etc/paths`. It should look like this:
 
-```
-# /etc/paths
-
-/usr/local/bin
-/usr/bin
-/bin
-/usr/sbin
-/sbin
-```
+  ```
+  /usr/local/bin
+  /usr/bin
+  /bin
+  /usr/sbin
+  /sbin
+  ```
 
 # APPS
 ### Chrome
@@ -111,3 +107,51 @@ echo '1i\n/usr/local/bin\n.\nwq' | sudo ed /etc/paths
 ### Xcode
 1. Install Xcode from the AppStore.
 1. Open Xcode to agree terms and conditions, and close it.
+
+### Command Line Tools
+Run in terminal `xcode-select --install` and then click install.
+
+### Homebrew
+1. Go to [http://brew.sh/](Homebrew's page), and copy the entire command listed under "Install Homebrew", then paste it into your terminal.
+
+1. Run `brew doctor` into your terminal.
+  **NOTE: YOUR SYSTEM WILL PROBABLY THROW SOME ERRORS HERE!** Some of these errors are probably minor, but some might not be; please wait until one of the instructors has given you the go-ahead before moving on.
+
+1. Once Homebrew says `Your system is ready to brew`, run  `brew update` to update Homebrew's directory of packages.
+
+### NVM and Node/NPM
+1. Run `brew install nvm` into your terminal.
+
+1. Add the following snippet to your bash configuration file `.bash_profile`.
+  ```
+  export NVM_DIR=~/.nvm
+  source $(brew --prefix nvm)/nvm.sh
+  ```
+
+1. Use NVM to install the latest stable version of Node:
+  ```
+  nvm install stable
+  ```
+
+1. Use NPM to install important Node modules and make them available across all of our projects:
+  ```
+  npm install -g jshint grunt-cli bower yo gulp
+  ```
+
+1. Install the node version for the AMEX project:
+  ```
+  nvm install 0.10.26
+  ```
+  ```
+  nvm use 0.10.26
+  ```
+  ```
+  nvm alias default 0.10.26
+  ```
+
+1. Update NPM:
+  ```
+  npm install npm -g
+  ```
+
+# Sublime Text 3
