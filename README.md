@@ -37,9 +37,9 @@ sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinst
 
 ### Other Preferences
 - Show hidden files:
-```
-defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder
-```
+  ```
+  defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder
+  ```
 - Right click on Battery > Show percentage
 
 ### Finder Preferences
@@ -56,18 +56,18 @@ defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder
 1. Check if you have a `.bash_profile` in your home directory. Open your terminal and type `ls ~/.bash_profile`. If you receive a warning saying no such file or directory exists, type `touch ~/.bash_profile`.
 
 1. Execute the follow commands at the terminal.
-```
-echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
-```
-```
-echo 'test -f ~/.bashrc && source ~/.bashrc' >> ~/.bash_profile
-```
+  ```
+  echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
+  ```
+  ```
+  echo 'test -f ~/.bashrc && source ~/.bashrc' >> ~/.bash_profile
+  ```
 
 1. Check `.bash_profile` to make sure it has the contents we expect. Type `cat ~/.bash_profile` in the terminal to look at the contents of the file. Near the bottom, you should have something that looks like this:
-```
-export PATH=/usr/local/bin:$PATH
-test -f ~/.bashrc && source ~/.bashrc
-```
+  ```
+  export PATH=/usr/local/bin:$PATH
+  test -f ~/.bashrc && source ~/.bashrc
+  ```
 
 1. Update `/etc/paths` by running the following commands.
 
