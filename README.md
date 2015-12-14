@@ -52,4 +52,16 @@ defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder
 
 # APPS
 ### Chrome
+
 ### Google Drive
+
+### Spotify
+
+### Hipchat
+
+### Skipe
+
+### Jumpcut
+- Users & Groups > Login Items > Jumpcut
+- Preferences > General > Display in menu > 40
+- Preferences > Hotkeys > Main hotkey > CMD + ALT + c
