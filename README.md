@@ -172,7 +172,7 @@ Run in terminal `xcode-select --install` and then click install.
     "translate_tabs_to_spaces": true,
     "word_wrap": true
   }
-
+  ```
 1. Go to `Sublime Text > Preferences > Key Bindings - User` and replace the entire content with the following:
   ```
   [
@@ -189,7 +189,7 @@ Run in terminal `xcode-select --install` and then click install.
       }
     }
   ]
-
+  ```
 1. Hide Minimap in `View > Hide Minimap`
 
 ### Package Manager
