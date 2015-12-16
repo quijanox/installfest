@@ -158,6 +158,7 @@ Run in terminal `xcode-select --install` and then click install.
 
 ### Custom Preferences
 1. Go to `Sublime Text > Preferences > Settings - User` and replace the entire content with the following:
+
   ```
   {
     "close_windows_when_empty": false,
@@ -173,7 +174,9 @@ Run in terminal `xcode-select --install` and then click install.
     "word_wrap": true
   }
   ```
+
 1. Go to `Sublime Text > Preferences > Key Bindings - User` and replace the entire content with the following:
+
   ```
   [
     { "keys": ["super+shift+m"],
@@ -190,6 +193,7 @@ Run in terminal `xcode-select --install` and then click install.
     }
   ]
   ```
+
 1. Hide Minimap in `View > Hide Minimap`
 
 ### Package Manager
@@ -200,17 +204,18 @@ Run in terminal `xcode-select --install` and then click install.
 ##### Install Add-On Packages
 1. Hit `command + shift + p` to enter the Command Pallette; and enter `install` into the search bar to open the package manager.
 1. Install each of the following plugins:
-- [All Autocomplete](https://github.com/alienhard/SublimeAllAutocomplete): Extends the default autocomplete to find matches in all open files. By default Sublime only considers words found in the current file.
-- [AngularJS](https://github.com/angular-ui/AngularJS-sublime-package)
-- [BeautifyRuby](https://github.com/CraigWilliams/BeautifyRuby)
-- [Better CoffeeScript](https://github.com/aponxi/sublime-better-coffeescript)
-- [Dotfiles Syntax Highlighting](https://github.com/mattbanks/dotfiles-syntax-highlighting-st2): Want ShellScript (Bash) syntax highlighting for your dotfiles? You're damn right you do!
-- [GitGutter](https://github.com/jisaacks/GitGutter): A sublime text 2/3 plugin to show an icon in the gutter area indicating whether a line has been inserted, modified or deleted.
-- [Haml](https://packagecontrol.io/packages/Haml)
-- [Handlebars](https://github.com/daaain/Handlebars)
-- [HTML5](https://packagecontrol.io/packages/HTML5): Add HTML5 syntax mode & snippets to Sublime Text.
-- [jQuery](https://github.com/SublimeText/jQuery): This is a Sublime Text bundle to help with jQuery functions. It has syntax highlighting and almost all of the jquery methods as snippets.
-- [Sass](https://packagecontrol.io/packages/Sass): Sass support for TextMate & Sublime Text (2 & 3).
+
+  - [All Autocomplete](https://github.com/alienhard/SublimeAllAutocomplete): Extends the default autocomplete to find matches in all open files. By default Sublime only considers words found in the current file.
+  - [AngularJS](https://github.com/angular-ui/AngularJS-sublime-package)
+  - [BeautifyRuby](https://github.com/CraigWilliams/BeautifyRuby)
+  - [Better CoffeeScript](https://github.com/aponxi/sublime-better-coffeescript)
+  - [Dotfiles Syntax Highlighting](https://github.com/mattbanks/dotfiles-syntax-highlighting-st2): Want ShellScript (Bash) syntax highlighting for your dotfiles? You're damn right you do!
+  - [GitGutter](https://github.com/jisaacks/GitGutter): A sublime text 2/3 plugin to show an icon in the gutter area indicating whether a line has been inserted, modified or deleted.
+  - [Haml](https://packagecontrol.io/packages/Haml)
+  - [Handlebars](https://github.com/daaain/Handlebars)
+  - [HTML5](https://packagecontrol.io/packages/HTML5): Add HTML5 syntax mode & snippets to Sublime Text.
+  - [jQuery](https://github.com/SublimeText/jQuery): This is a Sublime Text bundle to help with jQuery functions. It has syntax highlighting and almost all of the jquery methods as snippets.
+  - [Sass](https://packagecontrol.io/packages/Sass): Sass support for TextMate & Sublime Text (2 & 3).
 
 # Git, GitHub and Bitbucket
 ### Install Git
@@ -238,9 +243,6 @@ Run `brew install git` into the terminal.
   ```
   ```
   echo ".DS_Store" >> ~/.gitignore
-  ```
-  ```
-  echo "Gemfile.lock" >> ~/.gitignore
   ```
 
 1. Set a default user:
