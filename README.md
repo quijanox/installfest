@@ -34,6 +34,8 @@ Instructions for installing work environment in OS X
 - `Energy Saver > Battery & Power Adapter > uncheck "Put hard disks to sleep when possible"`
 - `Energy Saver > Battery > uncheck "Slightly dim the display while on battery power"`
 - `Date & Time > Clock > Date options > Show date`
+- `Sound > check "Play feedback when volume is changed"`
+- `Displays > uncheck "Automatically adjust brightness"`
 
 ### Other Preferences
 - Show hidden files by running this code into the terminal:
@@ -41,6 +43,7 @@ Instructions for installing work environment in OS X
   defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder
   ```
 - Right click on `Battery > Show percentage`
+- Remove all the apps in the dock
 
 ### Finder Preferences
 - `General > New Finder windows show > Downloads`
@@ -89,7 +92,7 @@ Instructions for installing work environment in OS X
   ```
 
 # APPS
-### Install Chrome, Google Drive, Spotify, Hipchat, Skype.
+### Install Chrome, Google Drive, Spotify, Hipchat, Skype, ChitChat.
 
 ### Jumpcut
 - `System Preferences > Users & Groups > Login Items > Jumpcut`
