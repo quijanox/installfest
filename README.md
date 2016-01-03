@@ -94,6 +94,12 @@ Instructions for installing work environment in OS X
 # APPS
 ### Install Chrome, Google Drive, Spotify, Hipchat, Skype, ChitChat.
 
+### iTerm2
+- Set window size & position (2 tabs)
+- `Window > Save window arrangement`
+- `Preferences > Arrangements > Set default`
+- `Preferences > General > Open default window arrangement`
+
 ### Jumpcut
 - `System Preferences > Users & Groups > Login Items > Jumpcut`
 - `Preferences > General > Display in menu > 40`
