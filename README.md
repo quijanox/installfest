@@ -53,6 +53,11 @@ Instructions for installing work environment in OS X
 - `Advanced > When performing a search > Search the current folder`
 - Add HD & User to favorites
 
+### Widget Preferences
+- Remove all
+- Add calculator
+- Download Quick Calendar and add to Widgets
+
 # Bash
 1. Check if you have a `.bashrc` file in your home directory. Open the terminal and type `ls ~/.bashrc`. If you receive a warning saying no such file or directory exists, type `touch ~/.bashrc`. This creates an empty file for us.
 
