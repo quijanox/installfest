@@ -265,4 +265,4 @@ Run `brew install git` into the terminal.
   ```
   ```
   git config --global user.email "bairesdev_dquijano@iseatz.com"
-  ```  
+  ```
