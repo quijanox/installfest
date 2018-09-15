@@ -261,8 +261,8 @@ Run `brew install git` into the terminal.
 
 1. Set a default user:
   ```
-  git config --global user.name "dquijano-bairesdev"
+  git config --global user.name "username"
   ```
   ```
-  git config --global user.email "bairesdev_dquijano@iseatz.com"
+  git config --global user.email "email@email.com"
   ```
